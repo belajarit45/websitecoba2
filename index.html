@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div id="auth-form" class="col-md-6 mx-auto">
+            <div id="login-form" class="form-container">
+                <h3>Login</h3>
+                <form id="login">
+                    <div class="form-group">
+                        <label for="login-username">Username</label>
+                        <input type="text" class="form-control" id="login-username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" class="form-control" id="login-password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    <p>Don't have an account? <a href="#" id="show-register">Register here</a></p>
+                    <div id="login-error" class="text-danger"></div>
+                </form>
+            </div>
+
+            <div id="register-form" class="form-container" style="display: none;">
+                <h3>Register</h3>
+                <form id="register">
+                    <div class="form-group">
+                        <label for="register-username">Username</label>
+                        <input type="text" class="form-control" id="register-username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Password</label>
+                        <input type="password" class="form-control" id="register-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-whatsapp">No WhatsApp</label>
+                        <input type="text" class="form-control" id="register-whatsapp" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                    <p>Already have an account? <a href="#" id="show-login">Login here</a></p>
+                    <div id="register-error" class="text-danger"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
